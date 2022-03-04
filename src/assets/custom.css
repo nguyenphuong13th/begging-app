@@ -1,0 +1,46 @@
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.Titlecolr{
+    color: #61DAFB;
+}
+.SubTitlecolor{
+    color: #fff;
+}
+.TitleComponent{
+    height: 90px;
+    background-color: #21222A;
+    padding: 30px 25px;
+}
+.BodyComponent{
+    height: 80%;
+    background-color: #282D35;
+    padding: 57px 27px;
+    color: #fff;
+}
+.LogoSize{
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+.ListItems::marker{
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
