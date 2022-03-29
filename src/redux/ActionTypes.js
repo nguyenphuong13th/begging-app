@@ -1,0 +1,5 @@
+export const STAFFS_SUCCESS='STAFFS_SUCCESS'
+export const STAFFS_FAILED='STAFFS_FAILED'
+export const STAFFS_LOADING='STAFFS_LOADING'
+export const ADD_USER ='ADD_USER'
+export const MODIFY_USER ='MODIFY_USER'

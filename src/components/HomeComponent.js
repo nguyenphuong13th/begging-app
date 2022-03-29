@@ -1,7 +1,13 @@
 import React from 'react'
-import{Navbar,Container,Nav} from 'react-bootstrap'
+import{useState} from 'react'
+import{Navbar,Container,Nav,Button} from 'react-bootstrap'
 import{Link} from 'react-router-dom'
+import ChatBoxComponent from './ChatBoxComponent'
 function HomeComponent() {
+  const[openChatBox,setOpenChatBox]= useState(false)
+  const[buttonTextStatus,setButtonTextStatus]=useState(true)
+  let textButton
+  buttonTextStatus? textButton='Open' : textButton='Close'
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -14,9 +20,13 @@ function HomeComponent() {
               <Nav.Link><Link to='/contact'>Contact</Link></Nav.Link>
               <Nav.Link><Link to='/footer'>Footer</Link></Nav.Link>
             </Nav>
+            <Button
+            onClick={()=>{setOpenChatBox(!openChatBox);setButtonTextStatus(!buttonTextStatus)}}
+            >{textButton} Chat</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {openChatBox && <ChatBoxComponent/>}
     </div>
   );
 }
